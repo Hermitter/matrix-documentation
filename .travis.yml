@@ -14,9 +14,6 @@ install:
 script: 
   - mkdocs build
   - git checkout gh-pages
-  - mv .git site
-  - git commit -m 'rebuild pages' --allow-empty
-  - git push origin gh-pages
   
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out /tmp/super_secret.txt -d
@@ -30,6 +27,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: git push origin gh-pages -f
+  script: - git push origin gh-pages --delete & git push origin gh-pages
   on:
     branch: master
