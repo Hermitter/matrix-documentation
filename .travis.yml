@@ -26,6 +26,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/site git@github.com:Hermitter/matrix-documentation.git
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/site https://github.com/Hermitter/matrix-documentation
   on:
     branch: master
