@@ -24,16 +24,8 @@ notifications:
   email: false
 
 deploy:
-  provider: pages
+  provider: script
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: site
+  script: git push origin gh-pages -f
   on:
-branch: master
-
-# deploy:
-#   provider: script
-#   skip_cleanup: true
-#   script: ghp-import -p site
-#   on:
-#     branch: master
+    branch: master
