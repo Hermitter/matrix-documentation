@@ -27,6 +27,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ghp-import -p $TRAVIS_BUILD_DIR/site
+  script: ghp-import -p site
   on:
     branch: master
