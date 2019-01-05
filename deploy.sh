@@ -1,15 +1,11 @@
-#!/bin/bash
+#!/bin/sh
+set -e
 
-eval "$(ssh-agent -s)" # Start ssh-agent cache
-chmod 600 .travis/super_secret.txt # Allow read access to the private key
-ssh-add .travis/super_secret.txt # Add the private key to SSH
+# setup ssh-agent and provide the GitHub deploy key
+eval "$(ssh-agent -s)"
+openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
+chmod 600 super_secret.txt
+ssh-add super_secret.txt
 
-git config --global push.default matching
-git remote add deploy ssh://git@$IP:$PORT$DEPLOY_DIR
-git push deploy master
-
-# Skip this command if you don't need to execute any additional commands after deploying.
-ssh apps@$IP -p $PORT <<EOF
-  cd $DEPLOY_DIR
-  crystal build --release --no-debug index.cr # Change to whatever commands you need!
-EOF
+# commit the assets in build/ to the gh-pages branch and push to GitHub using SSH
+./node_modules/.bin/gh-pages -d site/ -b gh-pages -r git@github.com:${TRAVIS_REPO_SLUG}.git
