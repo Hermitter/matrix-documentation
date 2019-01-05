@@ -1,5 +1,5 @@
-# addons:
-#   ssh_known_hosts: <deploy-host>
+addons:
+  ssh_known_hosts: <deploy-host>
 
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
@@ -23,7 +23,6 @@ script: mkdocs build
 deploy:
   provider: pages
   skip-cleanup: true
-  keep-history: true
-  local-dir: ./site
+  local-dir: deploy.sh
   on:
     branch: master
