@@ -1,13 +1,9 @@
-env:
-  global:
-    - secure: "hRm02tAc3uduwrZX7tmthX2WHQP21+lCRsxoW7pMkLTW9P+HIKL3rWomf6McD+cKcw6btzvjrLa3RgeFDbgF+vuLgAmuI58OIFI0xccyvovfSIZyTDzA1d/h9EGQdePMI1uJESRatfZhlk2bx4UzzGXNdhlzDPPzsgZTWw/yxiLh7tilt63Vmu3hH9plJ3DVFCxT2olwHWTu0c7rn30BELvOd/1swFi3eU4gyw0LVIx6Zm5sNhVUE7l7LxjOnFvxjy4qDVgKSP3GbDAeUHVNnUFwg2Tth0wK3hOHyZyv0HgH0Rdk+wIyGJvr6wDj1dXyUljtdtpgB6Bu6tQvmkgZH5QM99uYWAS7pWaFNuxL0MbuU+Ez8hE0I4Y7ZWIGI9joM7KIlv2AiigXy6RU93fTMwHCEwf/PHWHTZ1TxwBNz9iWvW5ee4uPBhYoFXZY3vYdVuiBPekLVoxDtwBAcpd9dLaBoDrRuNbWWGhrJCojm5ZNVRUG+rY5WHNPOQWhelpu+Vs9Eqt6pN2H+7z6FqbLdayUIcYxJ88cJlLmt1LheDBTfO6KDBTo94VbGhCwLgS6OGSNKCAUXN4OyuC5ajSU+NkmOFJYec1bVKp8rqy9F5mmITc5Jesgo4AC7vkaC+1FhKUF3n8Wg76rBSECyWEP6Ak3EcgrJ4NPbPJpAhp9L40="
-
-before_install:
-  - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
-
 language: python
 python:
   - "2.7"
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
 
 install:
   - pip install -r requirements.txt
@@ -16,20 +12,19 @@ install:
 notifications:
   email: false
 
-script: mkdocs build
+script: 
+  - mkdocs build --clean
+
+after_success:
+  # Add the ssh key
+  - eval "$(ssh-agent)"
+  - chmod 600 id_rsa
+  - ssh-add id_rsa
 
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  local-dir: ./site
+  local-dir: site
   on:
     branch: master
-
-# run after tests successfully finish
-after_success:
-  - |
-
-       $(npm bin)/set-up-ssh --key "$encrypted_f4e9782a8fc3_key" \
-                             --iv "$encrypted_f4e9782a8fc3_iv" \
-                             --path-encrypted-key ".travis/super_secret.txt.enc"
