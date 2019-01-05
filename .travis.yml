@@ -12,7 +12,8 @@ install:
   - pip install -r requirements.txt
 
 script: 
-  - echo | ls
+  - mkdocs build
+  - echo | ls $TRAVIS_BUILD_DIR/site
   
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out /tmp/super_secret.txt -d
@@ -26,6 +27,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: mkdocs gh-deploy --clean
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/site
   on:
     branch: master
