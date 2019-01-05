@@ -13,7 +13,6 @@ install:
 
 script: 
   - mkdocs build
-  - echo | ls $TRAVIS_BUILD_DIR/site
   
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out /tmp/super_secret.txt -d
@@ -27,6 +26,8 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ghp-import -p site
+  script: 
+    - echo 1231231231231
+    - echo 789789789879
   on:
     branch: master
