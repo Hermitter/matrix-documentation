@@ -15,6 +15,6 @@ notifications:
 deploy:
   provider: script
   skip-cleanup: true
-  local-dir: deploy.sh
+  script: deploy.sh
   on:
     branch: master
