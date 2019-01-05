@@ -4,9 +4,15 @@ before_install:
 language: python
 python:
   - "2.7"
-  
+
 install:
   - pip install -r requirements.txt
+
+# Don't email me the results of the test runs.
+notifications:
+email: false
+
+script: mkdocs build
 
 deploy:
   provider: pages
@@ -15,3 +21,7 @@ deploy:
   local-dir: ./site
   on:
     branch: master
+
+# run after tests successfully finish
+after_success:
+- bash echo "Tests Finished!"
