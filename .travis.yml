@@ -1,9 +1,15 @@
+# addons:
+#   ssh_known_hosts: <deploy-host>
+
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 super_secret.txt
+  - ssh-add super_secret.txt
+
 language: python
 python:
   - "2.7"
-
-before_install:
-  - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out super_secret.txt -d
 
 install:
   - pip install -r requirements.txt
@@ -12,19 +18,12 @@ install:
 notifications:
   email: false
 
-script: 
-  - mkdocs build --clean
-
-after_success:
-  # Add the ssh key
-  - eval "$(ssh-agent)"
-  - chmod 600 id_rsa
-  - ssh-add id_rsa
+script: mkdocs build
 
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  local-dir: site
+  local-dir: ./site
   on:
     branch: master
