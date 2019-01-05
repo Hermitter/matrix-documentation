@@ -12,9 +12,11 @@ install:
 notifications:
   email: false
 
+  script: ls
+
 deploy:
   provider: script
   skip-cleanup: true
-  script: deploy.sh
+  script: ./deploy.sh
   on:
     branch: master
