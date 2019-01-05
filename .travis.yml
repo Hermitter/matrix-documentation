@@ -27,6 +27,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: - git push origin gh-pages --delete & git push origin gh-pages
+  script: git push origin gh-pages --delete & git push origin gh-pages
   on:
     branch: master
