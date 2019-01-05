@@ -16,9 +16,10 @@ script:
   
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out /tmp/super_secret.txt -d
-- eval "$(ssh-agent -s)"
-- chmod 600 /tmp/super_secret.txt
-- ssh-add /tmp/super_secret.txt
+- "-e 'ssh -i /tmp/super_secret.txt'"
+# - eval "$(ssh-agent -s)"
+# - chmod 600 /tmp/super_secret.txt
+# - ssh-add /tmp/super_secret.txt
 
 notifications:
   email: false
