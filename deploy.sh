@@ -8,4 +8,5 @@ chmod 600 super_secret.txt
 ssh-add super_secret.txt
 
 # commit the assets in build/ to the gh-pages branch and push to GitHub using SSH
-./node_modules/.bin/gh-pages -d site/ -b gh-pages -r git@github.com:${TRAVIS_REPO_SLUG}.git
+mkdocs gh-deploy --clean
+# ./node_modules/.bin/gh-pages -d site/ -b gh-pages -r git@github.com:${TRAVIS_REPO_SLUG}.git
