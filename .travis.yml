@@ -24,10 +24,16 @@ notifications:
   email: false
 
 deploy:
-  provider: script
+  provider: pages
   skip_cleanup: true
-  script: 
-    - echo 1231231231231
-    - echo 789789789879
+  github_token: $GITHUB_TOKEN
+  local_dir: site
   on:
-    branch: master
+branch: master
+
+# deploy:
+#   provider: script
+#   skip_cleanup: true
+#   script: ghp-import -p site
+#   on:
+#     branch: master
