@@ -13,6 +13,7 @@ install:
 
 script: 
   - mkdocs build
+  - git fetch
   - git checkout gh-pages
   
 before_deploy:
