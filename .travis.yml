@@ -19,6 +19,7 @@ before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/super_secret.txt
 - ssh-add /tmp/super_secret.txt
+- echo | ssh-add -l
 
 notifications:
   email: false
