@@ -22,6 +22,7 @@ before_deploy:
 - git config user.name "Hermitter"
 - git config user.email "chacin.carlos9798@gmail.com"
 - git remote add gh-token "git@github.com:hermitter/matrix-documentation.git";
+- git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 
 notifications:
   email: false
@@ -29,6 +30,6 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+  script: if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then echo "Pushing to github"; PYTHONPATH=src/ mkdocs gh-deploy -v --clean --remote-name gh-token; git push gh-token gh-pages; fi;
   on:
     branch: master
