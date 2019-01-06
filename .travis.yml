@@ -19,8 +19,6 @@ before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/super_secret.txt
 - ssh-add /tmp/super_secret.txt
-- git config user.name "Hermitter"
-- git config user.email "chacin.carlos9798@gmail.com"
 - git remote add gh-token "git@github.com:hermitter/matrix-documentation.git";
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 
@@ -33,3 +31,6 @@ deploy:
   script: if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then echo "Pushing to github"; PYTHONPATH=src/ mkdocs gh-deploy -v --clean --remote-name gh-token; git push gh-token gh-pages; fi;
   on:
     branch: master
+
+#- git config user.name "Hermitter"
+#- git config user.email "chacin.carlos9798@gmail.com"

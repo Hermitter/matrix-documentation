@@ -1,4 +1,4 @@
-<h2 style="padding-top: 0">Installing MATRIX CORE!!!!!!!</h2>
+<h2 style="padding-top: 0">Installing MATRIX CORE@@@@@</h2>
 
 >Make sure you have setup your
 [MATRIX Creator](/matrix-creator/device-setup) or 
