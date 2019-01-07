@@ -19,10 +19,10 @@ script:
   - mkdocs build
   
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out /tmp/super_secret.txt -d
+- openssl aes-256-cbc -K $encrypted_f4e9782a8fc3_key -iv $encrypted_f4e9782a8fc3_iv -in super_secret.txt.enc -out deploy-key -d
 - eval "$(ssh-agent -s)"
-- chmod 600 /tmp/super_secret.txt
-- ssh-add /tmp/super_secret.txt
+- chmod 600 deploy-key
+- ssh-add deploy-key
 - git remote add gh-token "git@github.com:hermitter/matrix-documentation.git";
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 
