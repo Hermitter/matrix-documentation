@@ -1,4 +1,4 @@
-# MATRIX Ecosystem Overview (COMPILE OKAY TRA-TRA-TRA)
+# MATRIX Ecosystem Overview (COMp
 <h5 style="padding-top:0; font-weight:500;">Objective: Hardware shouldn't be hard</h5>
 The MATRIX Ecosystem was created to make powerful hardware projects very approachable for software developers. The pillars of MATRIX, computer vision, hardware interfaces, distributed internet communication, and data-driven end-user clients, are all programming disciplines which require years for an individual to master, or for a team to build a solution around.
 
