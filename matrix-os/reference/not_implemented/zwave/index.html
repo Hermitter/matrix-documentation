@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Zwave - MATRIX</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">MATRIX</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Overview</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MATRIX Creator <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../matrix-creator/overview/">Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../../../matrix-creator/device-setup/">Device Setup</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-creator/resources/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/pinout/">Pinout</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/microphone/">Microphones</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/reference-models/">Reference Models</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/system-architecture/">System Architecture</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/technical-datasheets/">Technical Datasheets</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/mcu/">MCU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-creator/resources/fpga/">FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../matrix-creator/troubleshooting/">Troubleshooting</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MATRIX Voice <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../matrix-voice/overview/">Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../../../matrix-voice/device-setup/">Device Setup</a>
+</li>
+                                    
+<li >
+    <a href="../../../../matrix-voice/esp32/">ESP32</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-voice/resources/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/pinout/">Pinout</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/microphone/">Microphones</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/reference-models/">Reference Models</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/system-architecture/">System Architecture</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/technical-datasheets/">Technical Datasheets</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-voice/resources/fpga/">FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../matrix-voice/troubleshooting/">Troubleshooting</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MATRIX OS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../overview/">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Getting Started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../getting-started/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../getting-started/installation/">Installation</a>
+</li>
+            
+<li >
+    <a href="../../../getting-started/applications/">Applications</a>
+</li>
+            
+<li >
+    <a href="../../../getting-started/publishing/">Publishing Apps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Reference</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../">Index</a>
+</li>
+            
+<li >
+    <a href="../../sensors/">Sensors</a>
+</li>
+            
+<li >
+    <a href="../../leds/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../configuration/">Config.yaml</a>
+</li>
+            
+<li >
+    <a href="../../cli-tool/">CLI Tool</a>
+</li>
+            
+<li >
+    <a href="../../dashboard/">Dashboard</a>
+</li>
+            
+<li >
+    <a href="../../widgets/">Widgets</a>
+</li>
+            
+<li >
+    <a href="../../crosstalk/">Cross Talk</a>
+</li>
+            
+<li >
+    <a href="../../data-types/">Data Types</a>
+</li>
+            
+<li >
+    <a href="../../system/">System Methods</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Examples</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../examples/">Examples</a>
+</li>
+            
+<li >
+    <a href="../../../examples/dash-create/">Dashboard</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../troubleshooting/">Troubleshooting</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MATRIX CORE <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../matrix-core/overview/">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Getting Started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/core-installation/">Installation</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/understanding-core/">Understanding CORE</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/javascript-installation/">Javascript Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/python-installation/">Python Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/getting-started/golang-installation/">Golang Setup</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Driver Protocols</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-core/protocols/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/everloop/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/humidity/">Humidity</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/imu/">IMU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/pressure/">Pressure</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/uv/">UV</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/servo/">Servo</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/gpio/">GPIO</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/protocols/wakeword/">Wakeword</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Javascript Examples</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/everloop/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/humidity/">Humidity</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/imu/">IMU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/pressure/">Pressure</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/uv/">UV</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/servo/">Servo</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/gpio/">GPIO</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/javascript-examples/wakeword/">Wakeword</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Python Examples</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/everloop/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/humidity/">Humidity</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/imu/">IMU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/pressure/">Pressure</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/uv/">UV</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/servo/">Servo</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/gpio/">GPIO</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-core/python-examples/wakeword/">Wakeword</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../matrix-core/troubleshooting/">Troubleshooting</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MATRIX HAL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../matrix-hal/overview/">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Getting Started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-hal/getting-started/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/getting-started/installation-package/">Installation From Package</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/getting-started/installation-source/">Installation From Source</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/getting-started/programs/">Compiling Programs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">References</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-hal/reference/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/everloop/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/humidity/">Humidity</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/imu/">IMU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/pressure/">Pressure</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/uv/">UV</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/gpio/">GPIO</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/reference/microphone/">Microphone</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Examples</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../matrix-hal/examples/">Index</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/everloop/">Everloop</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/humidity/">Humidity</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/imu/">IMU</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/pressure/">Pressure</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/uv/">UV</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/gpio/">GPIO</a>
+</li>
+            
+<li >
+    <a href="../../../../matrix-hal/examples/microphone/">Microphone</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../matrix-hal/troubleshooting/">Troubleshooting</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../help/">Support</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Still working out the precise API for this. Stay tuned.</p>
+<pre><code>matrix.init('zwave')...
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
