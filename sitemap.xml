@@ -1,498 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
     <url>
-     <loc>None</loc>
+     <loc>/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-creator/overview/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-creator/device-setup/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-creator/troubleshooting/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-voice/overview/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-voice/device-setup/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-voice/esp32/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-voice/troubleshooting/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-os/overview/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-os/troubleshooting/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-core/overview/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-core/troubleshooting/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-hal/overview/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
-     <lastmod>2019-01-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/matrix-hal/troubleshooting/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
     <url>
-     <loc>None</loc>
+     <loc>/help/</loc>
      <lastmod>2019-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
 </urlset>
